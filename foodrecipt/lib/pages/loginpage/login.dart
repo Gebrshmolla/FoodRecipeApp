@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodrecipt/core/themes/color.dart';
+import 'package:foodrecipt/pages/form/registration_form.dart';
 import 'package:foodrecipt/widgets/button.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -36,6 +37,9 @@ class LoginPage extends StatelessWidget {
   SizedBox(height: 10,),
   Center(
     child: GestureDetector(
+      onTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>RegistrationForm()));
+      },
       child: Text("Creat New Account",style:TextStyle(
         color: whiteColor
       ),),
