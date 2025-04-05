@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipt/widgets/button.dart';
 
 class RegistrationForm extends StatefulWidget {
   @override
@@ -26,7 +27,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -72,10 +73,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
                 },
               ),
               SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: _submitForm,
-                child: Text("Register"),
-              ),
+             Button(text: "Register", onPressed: _submitForm,color: Colors.blue,)
             ],
           ),
         ),
