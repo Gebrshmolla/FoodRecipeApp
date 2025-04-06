@@ -1,4 +1,5 @@
-import'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+
 class DashBord extends StatefulWidget {
   const DashBord({super.key});
 
@@ -7,15 +8,15 @@ class DashBord extends StatefulWidget {
 }
 
 class _DashBordState extends State<DashBord> {
-  TextEditingController t1=TextEditingController();
+  TextEditingController t1 = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(),
+      appBar: AppBar(),
       body: Column(
         children: [
-          Row(children: [Container(child:Text("data") ,)],),
-          Center(child: Text("hellow"),),
+          Row(children: [Container(child: Text("data"))]),
+          Center(child: Text("hellow")),
         ],
       ),
     );
