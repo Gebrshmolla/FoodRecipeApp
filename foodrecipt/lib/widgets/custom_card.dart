@@ -41,38 +41,40 @@ class FoodCard extends StatelessWidget {
             bottom: 16,
             left: 16,
             right: 16,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.end,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Chef profile image
-                CircleAvatar(
-                  radius: 18,
-                  backgroundImage: AssetImage(chefImageUrl),
+                Text(
+                  description,
+                  style: const TextStyle(
+                    color: Color.fromRGBO(255, 255, 255, 0.702),
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(height: 2),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    // Chef profile image
+                    CircleAvatar(
+                      radius: 10,
+                      backgroundImage: AssetImage(chefImageUrl),
+                    ),
+                    const SizedBox(width: 8),
 
-                // Name and description
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
+                    // Name and description
+                    Expanded(
+                      child: Text(
                         chefName,
                         style: const TextStyle(
                           color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                          fontSize: 10,
                         ),
                       ),
-                      Text(
-                        description,
-                        style: const TextStyle(
-                          color: Colors.white70,
-                          fontSize: 12,
-                        ),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ],
             ),
