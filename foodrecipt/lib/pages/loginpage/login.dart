@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipt/core/textStyle/textStyle.dart';
 import 'package:foodrecipt/core/themes/color.dart';
 import 'package:foodrecipt/pages/dashBord.dart';
 import 'package:foodrecipt/pages/form/registration_form.dart';
@@ -23,7 +24,8 @@ class LoginPage extends StatelessWidget {
             ),
           ),
         
- Column(children: [
+ Column(
+  children: [
     Row(
       
             mainAxisAlignment: MainAxisAlignment.end,
@@ -37,7 +39,9 @@ class LoginPage extends StatelessWidget {
             ],
           ),
           Expanded(child: SizedBox()),
- Container( width: double.infinity, margin: EdgeInsets.symmetric(horizontal:30 ), child:Button(text: "Login", onPressed: (){},color: const Color.fromARGB(255, 7, 134, 192),) ,) ,
+          Text("Welcome to Ethiopan\n Traditional Foods",style:fonts.White18,),
+          SizedBox(height: 5,),
+ Container( width: double.infinity, margin: EdgeInsets.symmetric(horizontal:30 ), child:Button(text: "Login", onPressed: (){},color: const Color.fromARGB(255, 7, 134, 192),textColor: Colors.white,) ,) ,
   SizedBox(height: 10,),
   Center(
     child: GestureDetector(
