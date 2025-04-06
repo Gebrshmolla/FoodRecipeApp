@@ -7,11 +7,17 @@ class DashBord extends StatefulWidget {
 }
 
 class _DashBordState extends State<DashBord> {
+  TextEditingController t1=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(),
-      body: Center(child: Text("hellow"),),
+      body: Column(
+        children: [
+          Row(children: [Container(child:Text("data") ,)],),
+          Center(child: Text("hellow"),),
+        ],
+      ),
     );
   }
 }

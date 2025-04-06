@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodrecipt/core/themes/color.dart';
+import 'package:foodrecipt/pages/dashBord.dart';
 import 'package:foodrecipt/pages/form/registration_form.dart';
 import 'package:foodrecipt/widgets/button.dart';
 class LoginPage extends StatelessWidget {
@@ -28,6 +29,9 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>DashBord()));
+                },
                 child: Container( margin: EdgeInsets.symmetric(horizontal: 10), child: Text("Later",style: TextStyle(color:Colors.white,fontSize:16),)),
               )
             ],

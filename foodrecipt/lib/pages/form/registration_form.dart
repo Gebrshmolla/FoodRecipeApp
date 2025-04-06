@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:foodrecipt/widgets/button.dart';
 
 class RegistrationForm extends StatefulWidget {
+  const RegistrationForm({super.key});
+
   @override
   _RegistrationFormState createState() => _RegistrationFormState();
 }
