@@ -16,7 +16,31 @@ class _DashBordState extends State<DashBord> {
       appBar: AppBar(),
       body: Column(
         children: [
-          Row(children: [Container(child:FoodCard(foodImageUrl: "assets/image/loginloo.jpg", chefImageUrl: "assets/image/loginloo.jpg", chefName: "chefName", description: "description"))]),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+              Container(
+                width: 200,
+                height: 150,
+              child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
+              )), Container(
+                width: 200,
+                height: 150,
+              child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
+              )), Container(
+                width: 200,
+                height: 150,
+              child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
+              )), Container(
+                width: 200,
+                height: 150,
+              child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
+              ))
+              ]
+              ),
+          ),
           Center(child: Text("hellow")),
         ],
       ),
