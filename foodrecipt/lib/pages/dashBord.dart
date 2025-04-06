@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipt/core/textStyle/textStyle.dart';
+import 'package:foodrecipt/core/themes/color.dart';
+import 'package:foodrecipt/widgets/button.dart';
 import 'package:foodrecipt/widgets/custom_card.dart';
 
 class DashBord extends StatefulWidget {
@@ -40,6 +43,37 @@ class _DashBordState extends State<DashBord> {
               ))
               ]
               ),
+          ),
+          SizedBox(height: 10,),
+          //Catagors
+          Column(
+            children: [
+              Row(
+                children: [
+                  Container( margin: EdgeInsets.only(left: 30), child: Text("Category",style: fonts.black18,)),
+                  Expanded(child: SizedBox()),
+
+                   GestureDetector(
+                    onTap: (){
+                      print("seeall");
+                    },
+                    child: Container(margin: EdgeInsets.symmetric(horizontal:10), child: Text("See All",style: fonts.primary12,))),
+                ],
+              ),
+              SizedBox(height: 15,),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  spacing: 40,
+                  children: [
+                    Button(text: "BreakFast  ", onPressed: (){},color: primaryColor,borderRadius: 25,textColor: Colors.white,),
+                    Button(text: "Lunch  ", onPressed: (){},color: whiteColor,borderRadius: 25,),
+                    Button(text: "Dinner  ", onPressed: (){},color: whiteColor,borderRadius: 25,),
+                  ],
+                ),
+              )
+
+            ],
           ),
           Center(child: Text("hellow")),
         ],

@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
             ],
           ),
           Expanded(child: SizedBox()),
-  Button(text: "Login", onPressed: (){},color: const Color.fromARGB(255, 7, 134, 192),),
+ Container( width: double.infinity, margin: EdgeInsets.symmetric(horizontal:30 ), child:Button(text: "Login", onPressed: (){},color: const Color.fromARGB(255, 7, 134, 192),) ,) ,
   SizedBox(height: 10,),
   Center(
     child: GestureDetector(
