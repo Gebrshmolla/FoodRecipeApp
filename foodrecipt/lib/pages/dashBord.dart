@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipt/widgets/custom_card.dart';
 
 class DashBord extends StatefulWidget {
   const DashBord({super.key});
@@ -15,7 +16,7 @@ class _DashBordState extends State<DashBord> {
       appBar: AppBar(),
       body: Column(
         children: [
-          Row(children: [Container(child: Text("data"))]),
+          Row(children: [Container(child:FoodCard(foodImageUrl: "assets/image/loginloo.jpg", chefImageUrl: "assets/image/loginloo.jpg", chefName: "chefName", description: "description"))]),
           Center(child: Text("hellow")),
         ],
       ),
