@@ -9,9 +9,9 @@ class FoodCard extends StatelessWidget {
   const FoodCard({
     super.key,
     required this.foodImageUrl,
-    required this.chefImageUrl,
-    required this.chefName,
-    required this.description,
+     this.chefImageUrl="",
+     this.chefName="",
+     this.description="",
   });
 
   @override
@@ -44,6 +44,7 @@ class FoodCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                description==""?Container():
                 Text(
                   description,
                   style: const TextStyle(
@@ -58,6 +59,7 @@ class FoodCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     // Chef profile image
+                    chefImageUrl==""?Container():
                     CircleAvatar(
                       radius: 10,
                       backgroundImage: AssetImage(chefImageUrl),
@@ -65,9 +67,10 @@ class FoodCard extends StatelessWidget {
                     const SizedBox(width: 8),
 
                     // Name and description
-                    Expanded(
-                      child: Text(
-                        chefName,
+                    SizedBox(
+                      height: 20,
+                      child:chefName==""?Container(): Text(
+                        "${chefName}good",
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 10,

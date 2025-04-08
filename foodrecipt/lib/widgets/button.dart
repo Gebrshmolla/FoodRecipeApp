@@ -12,9 +12,10 @@ class Button extends StatelessWidget {
     required this.onPressed,
     this.color = Colors.brown,
     this.fontSize = 16,
-    this.borderRadius = 12,  this.textColor=Colors.black,  
+    this.borderRadius = 12, 
+     this.textColor=Colors.black,  
   });
-
+  
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
