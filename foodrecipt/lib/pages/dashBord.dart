@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipt/AppDatas/appfulldata.dart';
 import 'package:foodrecipt/core/textStyle/textStyle.dart';
 import 'package:foodrecipt/core/themes/color.dart';
 import 'package:foodrecipt/pages/categoryPages/breakfast.dart';
@@ -14,46 +15,8 @@ class DashBord extends StatefulWidget {
   @override
   State<DashBord> createState() => _DashBordState();
 }
-
 class _DashBordState extends State<DashBord> {
-  List Data = [
-    {
-      'foodImage': 'assets/image/loginlogo.jpg',
-    
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
-    },
-    {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef B',
-      'description': 'Spicy doro wat'
-    },
-  ];
+  List Data = data.Datas;
   TextEditingController t1 = TextEditingController();
   List pages=[BreakfastItems(),LunchItems(),DinnerItems()];
   int curentindex=0;
@@ -61,6 +24,7 @@ class _DashBordState extends State<DashBord> {
     setState(() {
       curentindex=index;
     });
+
   }
   @override
   Widget build(BuildContext context) {
@@ -71,7 +35,7 @@ class _DashBordState extends State<DashBord> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-           Container(
+        Container(
             height: 60,
            child: Row(
              mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -96,31 +60,28 @@ class _DashBordState extends State<DashBord> {
                       ],
                     ),
               SizedBox(height: 10,),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                Container(
-                  width: 300,
-                  height: 250,
-                child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
-                )), Container(
-                 width: 300,
-                  height: 250,
-                child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
-                )), Container(
-                 width: 300,
-                  height: 250,
-                child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
-                )), Container(
-                 width: 300,
-                  height: 250,
-                child:FoodCard(foodImageUrl: "assets/image/loginlogo.jpg", chefImageUrl: "assets/image/loginlogo.jpg", chefName: "chefName", description: "description"
-                ))
-                ]
-                ),
+       Data.isNotEmpty
+  ? SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: Data.map<Widget>((item) {
+          return Container(
+            width: 300,
+            height: 250,
+            margin: const EdgeInsets.symmetric(horizontal: 8),
+            child: FoodCard(
+              foodImageUrl: item['foodImage'],
+              chefImageUrl: item['foodImage'], // or item['chefImage'] if you have it
+              chefName: item['chefName'],
+              description: item['description'],
             ),
+          );
+        }).toList(),
+      ),
+    )
+  : const Center(child: CircularProgressIndicator())
+,
             SizedBox(height: 20,),
             //Catagors
             Column(

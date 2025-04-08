@@ -44,7 +44,7 @@ class FoodListScreen extends StatelessWidget {
                          Container(
                           height: 30,
                            child: Text(
-                            "${ item['description']} gggggg",
+                            "${ item['description']} ",
                             style: fonts.black18,
                                                    ),
                          ),
