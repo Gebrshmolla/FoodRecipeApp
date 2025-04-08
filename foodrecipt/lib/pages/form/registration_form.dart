@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipt/core/themes/color.dart';
 import 'package:foodrecipt/pages/form/login_form.dart';
+import 'package:foodrecipt/widgets/button.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -93,18 +95,14 @@ class _RegistrationFormState extends State<RegistrationForm> {
               ),
               const SizedBox(height: 16),
 
-              _buildConfirmPasswordField(),
+              _buildConfirmPasswordField(),  
               const SizedBox(height: 32),
-
-              ElevatedButton(
-                onPressed: _submitForm,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF317CF6),
-                  padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 16),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                ),
-                child: const Text('Sign Up', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              ),
+Container(
+  width: double.infinity,
+  margin: EdgeInsets.symmetric(horizontal: 20),
+  child: Button(text: "Sign up", onPressed: _submitForm,color: primaryColor,textColor: whiteColor,),
+)
+            
             ],
           ),
         ),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipt/core/themes/color.dart';
+import 'package:foodrecipt/pages/form/registration_form.dart';
+import 'package:foodrecipt/widgets/button.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -41,6 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
             borderRadius: BorderRadius.circular(20),
           ),
           width: 400,
+          height: 1000,
           child: Form(
             key: _formKey,
             child: Column(
@@ -55,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 // Google Sign-in Button
                 ElevatedButton.icon(
                   onPressed: () {},
-                  icon: Image.asset('assets/google_icon.png', height: 24), // Add your google icon to assets
+                 // icon: Image.asset('assets/google_icon.png', height: 24), // Add your google icon to assets
                   label: const Text('Google', style: TextStyle(fontSize: 16)),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -163,29 +167,30 @@ class _LoginScreenState extends State<LoginScreen> {
                 // Sign In Button
                 SizedBox(
                   width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: _handleLogin,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF317CF6),
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                    ),
-                    child: const Text("Sign In", style: TextStyle(fontSize: 16)),
-                  ),
+                  child:Container(
+                    child: Button(text: "Sign In", onPressed:_handleLogin,color: primaryColor,textColor: whiteColor,),
+                  )
                 ),
                 const SizedBox(height: 16),
 
                 // Sign Up Text
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children:[
                     Text("Don’t have an account? "),
-                    Text(
-                      "Sign Up",
-                      style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
-                    ),
+                     GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>RegistrationForm()));
+                    },
+                    child:  Text(
+                    'Sign up',
+                    style: TextStyle(color: Colors.blue, fontWeight: FontWeight.w500),
+                  ),
+                  ),
+                    // Text(
+                    //   "Sign Up",
+                    //   style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                    // ),
                   ],
                 ),
               ],
