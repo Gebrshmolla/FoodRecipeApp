@@ -3,13 +3,6 @@ import 'package:foodrecipt/core/themes/color.dart';
 import 'package:foodrecipt/pages/form/registration_form.dart';
 import 'package:foodrecipt/widgets/button.dart';
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: LoginScreen(),
-  ));
-}
-
 class LoginScreen extends StatefulWidget {
   @override
   _LoginScreenState createState() => _LoginScreenState();
