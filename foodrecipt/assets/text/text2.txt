@@ -1,0 +1,10 @@
+This is a recipe description. It contains multiple lines to test pagination  456.
+
+
+Add more text to see the PageView in action. Each page will be displayed in a Discriptioncard widget. Swipe to navigate between pages.
+
+This is additional text to ensure the content is long enough to trigger pagination. Repeat this line multiple times to test multiple pages.
+
+This is additional text to ensure the content is long enough to trigger pagination. Repeat this line multiple times to test multiple pages.
+
+

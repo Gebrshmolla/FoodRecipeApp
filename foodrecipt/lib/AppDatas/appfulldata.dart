@@ -1,41 +1,441 @@
-class data{
-
-  static List Datas = [
+class data {
+  //full datas
+  static final List<Map<String, dynamic>> datas = [
     {
+      'name': 'Breakfast Cake',
       'foodImage': 'assets/image/loginlogo.jpg',
-      
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'meet',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Genfo',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
-    },
-     {
-      'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef A',
-      'description': 'Delicious breakfast injera'
+      'video': 'assets/videos/cake.mp4',
+      'description': ' breakfast cake',
+      'steps': 'assets/text/text2.txt',
     },
     {
+      'name': 'Breakfast Cake',
       'foodImage': 'assets/image/loginlogo.jpg',
-      'chefImage': 'assets/image/loginlogo.jpg',
-      'chefName': 'Chef B',
-      'description': 'Spicy doro wat'
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Injera',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
     },
   ];
+
+  static final List<Map<String, dynamic>> breakfast = [
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 1',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+  ];
+  //lunch
+  static final List<Map<String, dynamic>> lunch = [
+    {
+      'name': 'Breakfast Cake',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/cake.mp4',
+      'description': 'Delicious breakfast cake',
+      'steps': 'assets/text/text.txt',
+    },
+    {
+      'name': 'Breakfast Injera',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+    {
+      'name': 'Breakfast Injera 2',
+      'foodImage': 'assets/image/l.webp',
+      'video': 'assets/videos/dinear.mp4',
+      'description': 'Delicious breakfast injera',
+      'steps': 'assets/text/text2.txt',
+    },
+  ];
+
+  //dinner
+
+  static final List<Map<String, dynamic>> dinner = [
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'Dinner Item',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'shro',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': ' dorowet',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+    {
+      'name': 'sga',
+      'foodImage': 'assets/image/loginlogo.jpg',
+      'video': 'assets/videos/dinner.mp4',
+      'description': 'Hearty dinner dish',
+      'steps': 'assets/text/dinner.txt',
+    },
+  ];
+  static final List<Map<String, dynamic>> favoriteItems =[
+  
+];
 }
+
+//  FavoriteItems
